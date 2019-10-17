@@ -1,4 +1,4 @@
-baseURL: https://localhost:1313
+baseURL: https://why2ly.github.io
 languageCode: zh-CN
 title: Snow Wang
 theme: hugo-refresh # using hugo-refresh theme
