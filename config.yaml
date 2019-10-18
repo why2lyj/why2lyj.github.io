@@ -19,9 +19,6 @@ Taxonomies:
 # https://bulkitv2.cssninja.io/_components-icons-fa.html
 
 params:
-  # busuanzi
-  busuanzi: true
-  busuanzi_site_offset: 100000
   # parameter used to specify if you want to minify the imported js
   jsMinify: false
   # parameter used to specify if you want to add the fingerprint to the imported js
