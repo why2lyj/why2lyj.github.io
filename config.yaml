@@ -1,4 +1,4 @@
-baseURL: https://why2lyj.github.io
+baseURL: http://farseer.vip
 languageCode: zh-CN
 title: Snow Wang
 theme: hugo-refresh # using hugo-refresh theme
@@ -70,7 +70,7 @@ params:
 
   # homepage options
   homepage:
-    host: https://why2lyj.github.io
+    host: http://farseer.vip
     # option to specify the title in the homepage
     title: Snow Wang
     # option to specify the subtitle in the homepage
