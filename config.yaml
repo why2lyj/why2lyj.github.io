@@ -70,7 +70,7 @@ params:
 
   # homepage options
   homepage:
-    host: http://localhost:1313
+    host: https://why2lyj.github.io
     # option to specify the title in the homepage
     title: Snow Wang
     # option to specify the subtitle in the homepage
