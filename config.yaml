@@ -1,4 +1,4 @@
-baseURL: http://farseer.vip
+baseURL: http://www.farseer.vip
 languageCode: zh-CN
 title: Snow Wang
 theme: hugo-refresh # using hugo-refresh theme
@@ -70,7 +70,7 @@ params:
 
   # homepage options
   homepage:
-    host: http://farseer.vip
+    host: http://www.farseer.vip
     # option to specify the title in the homepage
     title: Snow Wang
     # option to specify the subtitle in the homepage
@@ -86,7 +86,7 @@ params:
     # option to specify the logo in the footer
     logo: "/images/refresh-square.svg"
     # option to specify your contact email in the footer
-    email: farseer@gmail.com
+    email: admin@farseer.vip
     # option to specify your linkedin profile in the footer
     linkedin: https://www.linkedin.com/your_linkedin_profile/
     # option to specify the copyright in the footer
