@@ -113,86 +113,71 @@
   
     </div>
   </nav>
-<section class="section">
-                    <div class="container">
-                        <div class="columns">
-                        <div class="column is-centered-tablet-portrait">
-                            <h1 class="title section-title">Jsssc</h1>
-                            <h5 class="subtitle is-5 is-muted"></h5>
-                            <div class="divider"></div>        
-                            <div class="section">
-                            <div class="container">
-                                <div class="columns"></div>
-                                        <div class="columns"><div class="column is-4">
-    <div class="box">
-      <figure class="image is-3by2">
-        <a href="/blog/20191211/"><img src="/images/default_summary_hu2be732aee21a2469ead3fe1f2df8caca_2088687_600x0_resize_q75_box.jpg" alt=""></a>
-      </figure>
-      <h3 class="title is-5 refresh-summary-title">
-        JSSSC Runing Status
-      </h3>
-      <p class="refresh-summary">Topical viewers trending</p> 
-      <div class="action has-text-right">
-        <a href="/blog/20191211/" class="button is-primary">
-                Read More
-            </a>
-      </div>
-    </div>
-  </div><div class="column is-4">
-    <div class="box">
-      <figure class="image is-3by2">
-        <a href="/blog/20191231/"><img src="/images/default_summary_hu2be732aee21a2469ead3fe1f2df8caca_2088687_600x0_resize_q75_box.jpg" alt=""></a>
-      </figure>
-      <h3 class="title is-5 refresh-summary-title">
-        JSSSC Runing Status
-      </h3>
-      <p class="refresh-summary">Topical viewers trending</p> 
-      <div class="action has-text-right">
-        <a href="/blog/20191231/" class="button is-primary">
-                Read More
-            </a>
-      </div>
-    </div>
-  </div></div>
-                            </div>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                </section><section class="section">
-                    <div class="container">
-                        <div class="columns">
-                        <div class="column is-centered-tablet-portrait">
-                            <h1 class="title section-title">PyCharm</h1>
-                            <h5 class="subtitle is-5 is-muted"></h5>
-                            <div class="divider"></div>        
-                            <div class="section">
-                            <div class="container">
-                                <div class="columns"></div>
-                                        <div class="columns"><div class="column is-4">
-    <div class="box">
-      <figure class="image is-3by2">
-        <a href="/blog/20191104/"><img src="/blog/20191104/summary_hu2453815ac490709904c6555f5b352b17_326772_600x0_resize_q75_box.jpg" alt=""></a>
-      </figure>
-      <h3 class="title is-5 refresh-summary-title">
-        PyCharm 2019.1 Activation Code
-      </h3>
-      <p class="refresh-summary">PyCharm 2019.1 Activation Code</p> 
-      <div class="action has-text-right">
-        <a href="/blog/20191104/" class="button is-primary">
-                Read More
-            </a>
-      </div>
-    </div>
-  </div></div>
-                            </div>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                </section>
+<section class="section is-medium">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-centered-tablet-portrait">
+        <h1 class="title is-2 section-title"></h1>
+        <h5 class="subtitle is-5 is-muted"></h5>
+        <div class="divider"></div>
+        
+        <section class="section content has-text-justified">
+          
 
-    <footer class="footer footer-dark">
+<p>├── build.sh  ## 如果 why2lyj.github.io 有更新，运行此脚本可以直接上传到github上
+├── hugo      ## hugo_extended_0.58.3_Linux-64bit
+├── JssscSpider ## 一个项目主要为爬虫
+├── mysql.sql   ## 对应爬虫的SQL语句，查询用
+├── why2lyj.github.io ## 自己的github代码</p>
+
+<h2 id="build-sh">build.sh</h2>
+
+<p>代码</p>
+
+<pre><code># run hugo
+docker exec -it f494a4a664c9 bash -c &quot;cd /root/why2lyj.github.io/ &amp;&amp; /root/hugo&quot;
+# rm
+cd /root/build/hugo/why2lyj.github.io &amp;&amp; rm -rf 404.html about blog css diary fonts footer.svg images index.html js loaders loader.svg sidebar.svg tags
+# mv publich to why2lyj.github.io
+mv ./public/* ./
+rm -rf ./public/
+# git add
+git add --all
+# git commit
+CURRENT_TIME=`date &quot;+%Y-%m-%d %H:%M:%S&quot;`
+git commit -m &quot;AUTO COMMIT ${CURRENT_TIME}&quot;
+</code></pre>
+
+<p>f494a4a664c9 是一个Docker的CONTAINER ID, 这个镜像的 Dockerfile 如下：</p>
+
+<pre><code>FROM python:3.7-slim-stretch
+RUN apt-get update &amp;&amp; \
+    apt-get install -y gcc &amp;&amp; \
+    apt-get install -y g++
+</code></pre>
+
+<p>运行命令 <code>docker run -it -d -v /root/build/hugo:/root/ --name hugo gcc:1.0.0</code></p>
+
+<p>自己已经装过git了，做了免密</p>
+
+<h2 id="why2lyj-github-io">why2lyj.github.io</h2>
+
+<p>farseer.vip 的源代码，托管在 <a href="https://github.com/why2lyj/why2lyj.github.io" target="_blank">https://github.com/why2lyj/why2lyj.github.io</a></p>
+
+<p>使用的是 hugo-refresh <a href="https://github.com/PippoRJ/hugo-refresh" target="_blank">https://github.com/PippoRJ/hugo-refresh</a></p>
+
+<p>我改动过几个地方，未来要更新的时候务必小心对待。</p>
+
+        </section>
+      </div>
+    </div>
+  </div>  
+  <div class="container">
+    <div class="columns">
+      <div class="column has-text-right is-family-monospace is-centered-tablet-portrait">
+        Last modified:1 January 0001</div>
+    </div>
+  </div></section><footer class="footer footer-dark">
   <div class="container">
     <div class="columns">
       <div class="column">
