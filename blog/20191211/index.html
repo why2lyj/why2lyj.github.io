@@ -117,72 +117,65 @@
   <div class="container">
     <div class="columns">
       <div class="column is-centered-tablet-portrait">
-        <h1 class="title is-2 section-title">JSSSC Runing Status</h1>
+        <h1 class="title is-2 section-title">Python 修改 logging 时间</h1>
         <h5 class="subtitle is-5 is-muted"></h5>
         <div class="divider"></div>
         
         <section class="section content has-text-justified">
           
 
-<p><em>This article is generated automatically by a spider, the content is showing some data which is topical viewers by times.</em></p>
+<h2 id="发生环境">发生环境：</h2>
 
-<p><em>refresh time: 2019-12-12 07:30:01</em></p>
+<p><em>Python3+、docker-18.03</em></p>
 
-<hr />
+<h2 id="问题描述">问题描述：</h2>
 
-<h2 id="tokens">Tokens</h2>
+<p>　　最近需要写日志来查看下程序的总体运行情况，另外代码是直接丢进<code>docker</code>中部署的，发现输出的日志时间与本地时间相差8小时，因为<code>docker</code>的本地时间在镜像<code>build</code>时候就设置成了北京时间，所以第一个感觉是<code>logging</code>模块的默认时间可能是根本问题。</p>
 
-<table>
-<thead>
-<tr>
-<th align="center">No.</th>
-<th align="center">Token</th>
-<th align="center">Create Time</th>
-</tr>
-</thead>
+<p>日志输出的时间：</p>
 
-<tbody>
-<tr>
-<td align="center">1</td>
-<td align="center">rDozwYtImmf67KS6ufMebvmVP1vXWb+SBemoyXU2LR3VlBZIElpasg==</td>
-<td align="center">2019-12-11 07:34:10</td>
-</tr>
+<pre><code class="language-python">2019-12-11 14:01:16.00276 INFO:apscheduler.executors.default:Running job
+</code></pre>
 
-<tr>
-<td align="center">2</td>
-<td align="center">u08gdabdP5UY0sYBw3ewFi4+Ca3qZA8IPxrcA9WW/5Yr4aPAQipeag==</td>
-<td align="center">2019-12-12 07:25:05</td>
-</tr>
-</tbody>
-</table>
+<p>查询本地时间（docker容器内部时间）：</p>
 
-<hr />
+<pre><code class="language-shell">Wed Dec 11 22:01:16 CST 2019
+</code></pre>
 
-<h2 id="numbers">Numbers</h2>
+<p><em>搜了很多地方，最后还是很无奈的妥妥地去了官网
+<code>https://docs.python.org/3/howto/logging.html</code></em></p>
 
-<table>
-<thead>
-<tr>
-<th align="center">No.</th>
-<th align="center">Day</th>
-<th align="center">Number</th>
-</tr>
-</thead>
+<p>有一段话解释了logging使用的时间：</p>
 
-<tbody>
-<tr>
-<td align="center">1</td>
-<td align="center">2019-12-11</td>
-<td align="center">721</td>
-</tr>
+<blockquote>
+<p>Formatters use a user-configurable function to convert the creation time of a record to a tuple. By default, time.localtime() is used; to change this for a particular formatter instance, set the converter attribute of the instance to a function with the same signature as time.localtime() or time.gmtime(). To change it for all formatters, for example if you want all logging times to be shown in GMT, set the converter attribute in the Formatter class (to time.gmtime for GMT display).</p>
+</blockquote>
 
-<tr>
-<td align="center">2</td>
-<td align="center">2019-12-10</td>
-<td align="center">-8117</td>
-</tr>
-</tbody>
-</table>
+<p><strong>总结一下就是</strong>：<code>logging</code>默认使用的是<code>time.localtime()</code>，如果要使用其他时间需要使用<code>Formatter</code>下的<code>converter</code>重定义。<code>time.localtime()</code>的时间使用的是
+<a href="https://docs.python.org/3/library/time.html#time.localtime" target="_blank">time.time()</a>, 而<code>time.time()</code>返回的是<a href="https://docs.python.org/3/library/time.html#time.time" target="_blank">UTC时间</a>，即从 1970-1-1 00:00:00 到现在的秒数，因此时间相差8小时。</p>
+
+<h2 id="解决办法">解决办法：</h2>
+
+<p>最后改了下代码：</p>
+
+<pre><code class="language-python">import datetime
+import logging
+
+def CST():
+    # UTC与CST相差8小时
+    cst = datetime.datetime.now() + datetime.timedelta(hours=8)
+    return cst.timetuple()
+
+# 修改日志默认时区
+logging.Formatter.converter = CST
+
+logging.basicConfig(level=logging.INFO,
+                    format='%(asctime)s %(filename)s[line:%(lineno)d] %(levelname)s %(message)s',
+                    datefmt='%Y-%m-%d %H:%M:%S',
+                    filename='log.txt',
+                    filemode='a')
+
+</code></pre>
 
         </section>
       </div>
