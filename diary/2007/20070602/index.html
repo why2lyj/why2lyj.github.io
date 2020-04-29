@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="x-ua-compatible" content="ie=edge"><title>Snow Wang</title>
+    
+<link rel="icon" type="image/png" href="/images/favicon.png" />
+
+
+<link href="https://fonts.googleapis.com/css?family=Open&#43;Sans" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open&#43;Sans" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open&#43;Sans" rel="stylesheet"><link rel="stylesheet" type="text/css" href="/css/style.min.c792dd9fdc015e002564828445794c60a4326d1de4d387b32233bed5fd972471.css" integrity="sha256-x5Ldn9wBXgAlZIKERXlMYKQybR3k04ezIjO&#43;1f2XJHE=">
+<link rel="stylesheet" type="text/css" href="/css/monokai-sublime.9.15.8.min.min.3a5d282f03108101d715e80fd4c07b55502ec4673fc063f2b6e415d4def5b354.css" integrity="sha256-Ol0oLwMQgQHXFegP1MB7VVAuxGc/wGPytuQV1N71s1Q=">
+<link rel="stylesheet" type="text/css" href="/css/icons.min.56faae60f16170cbfab5c036036aafb37d367aa4d4f4483b335bd98b891fa00b.css" integrity="sha256-VvquYPFhcMv6tcA2A2qvs302eqTU9Eg7M1vZi4kfoAs=">
+<link rel="stylesheet" type="text/css" href="/css/refresh-css.min.4150dea8b1163110505480d97b50425998cd09b589f3ce9f9c36cd2ce2dc64c3.css" integrity="sha256-QVDeqLEWMRBQVIDZe1BCWZjNCbWJ886fnDbNLOLcZMM=">
+<link rel="stylesheet" type="text/css" href="/css/devicon.min.min.518a62b47f686f4f58d3fb025f440517563136512a002a84068505741776d302.css" integrity="sha256-UYpitH9ob09Y0/sCX0QFF1YxNlEqACqEBoUFdBd20wI=">
+
+  </head>
+  <body>
+    
+    <div id="preloader">
+      <div id="status"></div>
+    </div><nav class="navbar is-fresh is-transparent no-shadow" role="navigation" aria-label="main navigation">
+  <div class="container">
+    <div class="navbar-brand">
+
+      
+      
+      
+      <a class="navbar-item">
+        <div class="menu-icon-wrapper left-menu-icon-wrapper" style="visibility: visible;">
+          <svg width="1000px" height="1000px">
+            <path class="path1" d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800"></path>
+            <path class="path2" d="M 300 500 L 700 500"></path>
+            <path class="path3" d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200"></path>
+          </svg>
+          <button id="menu-icon-trigger" class="menu-icon-trigger"></button>
+        </div>
+        <div class="navbar-item left-menu-icon-wrapper">Tags</div>
+      </a>
+      <div class="navbar-item is-expanded"><a class="navbar-item" href="http://www.farseer.vip"><div >HOME</div></a></div>
+      <a class="navbar-item is-hidden-desktop">  
+        <div data-target="navbar-menu" class="navbar-item right-menu-icon-wrapper is-hidden-desktop">Menu</div>
+        <div data-target="navbar-menu" class="menu-icon-wrapper right-menu-icon-wrapper" style="visibility: visible;">
+          <svg width="1000px" height="1000px">
+            <path class="path1" d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800"></path>
+            <path class="path2" d="M 300 500 L 700 500"></path>
+            <path class="path3" d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200"></path>
+          </svg>
+          <button id="menu-icon-trigger" class="menu-icon-trigger"></button>
+        </div>
+      </a>
+    </div>
+
+    <div id="navbar-menu" class="navbar-menu is-static">
+      
+      <div class="navbar-end">
+        <a href="/about/" class="navbar-item is-secondary">About Me</a><a href="/blog/" class="navbar-item is-secondary">Blog</a>
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a href="/diary/" class="navbar-link">Diary</a>
+            <div class="navbar-dropdown">
+
+              <a href="/diary/2020/" class="navbar-item">Year of 2020</a><a href="/diary/2019/" class="navbar-item">Year of 2019</a><a href="/diary/2018/" class="navbar-item">Year of 2018</a><a href="/diary/2017/" class="navbar-item">Year of 2017</a><a href="/diary/2016/" class="navbar-item">Year of 2016</a><a href="/diary/2015/" class="navbar-item">Year of 2015</a><a href="/diary/2014/" class="navbar-item">Year of 2014</a><a href="/diary/2013/" class="navbar-item">Year of 2013</a><a href="/diary/2012/" class="navbar-item">Year of 2012</a><a href="/diary/2011/" class="navbar-item">Year of 2011</a><a href="/diary/2010/" class="navbar-item">Year of 2010</a><a href="/diary/2009/" class="navbar-item">Year of 2009</a><a href="/diary/2008/" class="navbar-item">Year of 2008</a><a href="/diary/2007/" class="navbar-item">Year of 2007</a></div>
+          </div></div>
+    </div>
+  </div>
+</nav><nav id="navbar-clone" class="navbar is-fresh is-transparent" role="navigation" aria-label="main navigation">
+  <div class="container">
+      <div class="navbar-brand">
+  
+        
+        
+        
+        <a class="navbar-item">
+          <div class="menu-icon-wrapper left-menu-icon-wrapper" style="visibility: visible;">
+            <svg width="1000px" height="1000px">
+              <path class="path1" d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800"></path>
+              <path class="path2" d="M 300 500 L 700 500"></path>
+              <path class="path3" d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200"></path>
+            </svg>
+            <button id="menu-icon-trigger" class="menu-icon-trigger"></button>
+          </div>
+          <div class="navbar-item left-menu-icon-wrapper">Tags</div>
+        </a>
+  
+        <div class="navbar-item is-expanded"><a class="navbar-item" href="http://www.farseer.vip"><div >HOME</div></a></div>
+        <a class="navbar-item is-hidden-desktop">  
+          <div data-target="cloned-navbar-menu" class="navbar-item right-menu-icon-wrapper is-hidden-desktop">Menu</div>
+          <div data-target="cloned-navbar-menu" class="menu-icon-wrapper right-menu-icon-wrapper" style="visibility: visible;">
+            <svg width="1000px" height="1000px">
+              <path class="path1" d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800"></path>
+              <path class="path2" d="M 300 500 L 700 500"></path>
+              <path class="path3" d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200"></path>
+            </svg>
+            <button id="menu-icon-trigger" class="menu-icon-trigger"></button>
+          </div>
+        </a>
+      </div>
+  
+      
+  
+      <div id="cloned-navbar-menu" class="navbar-menu is-static">
+        <div class="navbar-end">
+          <a href="/about/" class="navbar-item is-secondary">About Me</a><a href="/blog/" class="navbar-item is-secondary">Blog</a><div class="navbar-item has-dropdown is-hoverable">
+              <a href="/diary/" class="navbar-link">Diary</a>
+              <div class="navbar-dropdown">
+                <a href="/diary/2020/" class="navbar-item">Year of 2020</a><a href="/diary/2019/" class="navbar-item">Year of 2019</a><a href="/diary/2018/" class="navbar-item">Year of 2018</a><a href="/diary/2017/" class="navbar-item">Year of 2017</a><a href="/diary/2016/" class="navbar-item">Year of 2016</a><a href="/diary/2015/" class="navbar-item">Year of 2015</a><a href="/diary/2014/" class="navbar-item">Year of 2014</a><a href="/diary/2013/" class="navbar-item">Year of 2013</a><a href="/diary/2012/" class="navbar-item">Year of 2012</a><a href="/diary/2011/" class="navbar-item">Year of 2011</a><a href="/diary/2010/" class="navbar-item">Year of 2010</a><a href="/diary/2009/" class="navbar-item">Year of 2009</a><a href="/diary/2008/" class="navbar-item">Year of 2008</a><a href="/diary/2007/" class="navbar-item">Year of 2007</a></div>
+            </div></div>
+      </div>
+  
+  
+  
+  
+    </div>
+  </nav>
+<section class="section is-medium">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-centered-tablet-portrait">
+        <h1 class="title is-2 section-title">人生一难，方参生死两重天</h1>
+        <h5 class="subtitle is-5 is-muted"></h5>
+        <div class="divider"></div>
+        
+        <section class="section content has-text-justified">
+          <p>我想我应该向大家讲述我这次生病的经历，也作为我纪录人生的一次磨难的伊始</p>
+
+<p>首先我先阐明一句话，免得大家说我 —— I&rsquo;m no Shakespeare</p>
+
+<p>应该从我发病开始说起。</p>
+
+<p>那天是5月12号晚课前，我身上出现一个一个的小泡泡，有点痒，挠的时候还有些疼，我觉得这不是个好东西，而且都两天了，这样的小泡泡在我的脖子和胸之间越出越多。我的担心果然引起了我大姨的注意。由于大姨的公公也出现过这样的泡泡，她一口断定，这是带状疱疹，俗名就是蛇盘创。由于天色已晚，而且我身上起的只有5、6个而已，就没有立刻去治疗。但是大姨还是坚持我明天必须去社区就医，她知道这东西不是个好东西。大姨说趁这泡泡还有疼快点去治，等疼了，那就是要命的疼。</p>
+
+<p>第二天——5月13号——这天一早我就祝母亲节日快乐了。可是，这个母亲节让母亲过的不踏实。</p>
+
+<p>下午第二节课我并没有去上，跟随大姨到了社区，没想到，得这病的人还挺是多的，大夫一看我身上就说去点一瓶吧。我记得那药是无环鸟苷，是抗病毒的药。接着就要给我做试敏。就是这一针试敏，让我大姨拉了两天的肚，两天没睡好觉。</p>
+
+<p>当时针进入肘部的时候，我就觉得不劲，那医生推药的时候，我就开始难受。她还未打完针的时候，我的脸色开始突变！嘴唇异常的发紫，我当时脑袋发晕，很是想吐，呼吸急促，腿脚发软，我一边说我难受一边闭上了眼，大概有几秒钟我再睁开眼的时候——天黑了！黑的异常，我看不见东西，什么都看不清，黑的一点都看不清，但人影略在眼眶中闪动，我听不清人们说什么，就是觉的好吵。我睁大眼睛看东西，我仔细看，可是我什么都看不见，一切都是黑的……</p>
+
+<p>后来我才听我大姨说，我是晕针——我真没出息——当时全社区的大夫都来了，有个老大夫摸了我的脉，让别人拿来听诊器。这一点我只听“脉搏正常”四个字。至于她摸没摸我脉，用没用听诊器，我都没感觉。之后我就被扎了一针管晕针的药——缓过来了……</p>
+
+<p>我给母亲打了电话，没过半小时，二叔和母亲就到了。</p>
+
+<p>二叔当时看屋子里的人好多，一看就慌了，他没想那么严重，一把就握着我的手了……</p>
+
+<p>母亲也在旁担心的看着……</p>
+
+<p>本打算给我针灸的大夫说，我可不给你针灸，你要是在晕过去，我可负不了责任。这样只到6点左右，药打完了，我没吃饭就去上课了……</p>
+
+<p>晚上，我以为由于药的作用，我的肚子开始疼（之后在上哈市人民解放军211医院后，检查出由于疱疹病毒侵入肾，导致肾功不全，引起双肾疼痛，从而引起腹部大面积疼痛），疼痛难忍。没到放学，我的腹部疼的我全身发抖。当晚，痛了一夜……</p>
+
+<p>第三天——5月14日。大姨不敢看我打针了，她开始拉肚子，因为我前一天晕针把她吓坏了，我母亲以为她虚呼，也没在意。更没在意我的病情。这次来社区，那大夫一看我就说：“你还来啊！”她毕竟看到我晕针不敢给我打了。我想想那也是受苦啊，晕针算是没出息，但我没失禁就够出息的了（晕针病人大多会失禁）。</p>
+
+<p>这次我小叔来看我打针，顺便针灸了，我母亲也看着……</p>
+
+<p>一切顺利，边打针边针灸辅助过关了。应该声明：我肚子还是疼。</p>
+
+<p>之后我又去上课了。我并不想去学校，我根本听不进去课，我浑身难受。可是我还是去了……</p>
+
+<p>当晚9点左右，我肚子疼的不行了，上医院了……</p>
+
+<p>我分明记得给我看的人叫孟祥彪，他说我便秘！给我开了一些泻肚子的药。然后还给了我一针，扎的我屁股死疼死疼的。</p>
+
+<p>大概9点半左右，我回到了家。</p>
+
+<p>当晚，肚子继续疼，又是一夜没睡。</p>
+
+<p>第四天——5月15号</p>
+
+<p>上午去打的针一直到中午。</p>
+
+<p>中午正巧敢上放学，我从社区出来，脑袋晕沉沉的，碰上了几个同学，当时，我就有点要倒的意识。母亲在社区里和大夫咨询，我自己回家了。</p>
+
+<p>我依旧挨过了一天。当夜依旧没睡。神智恍惚记不太多了。那天我也没好好上课，应该说没去。</p>
+
+<p>第五天——5月16日——改变我命运的一天开始了！！！</p>
+
+<p>当天上午我去听了两节课，第二节下课我就不行了，由于母亲担心，她和我一起来的，在学校档案室和她的一个朋友聊天，我进去后，也巧间操都过了，刚要出门。我吐了！</p>
+
+<p>到了社区，我不想打针了，因为我一直以为是打针，药物的副作用引起我肚子疼，所以在社区我并没有让她们给我打，只是针灸……</p>
+
+<p>在针灸之前，我开始出现反映了！！！</p>
+
+<p>我正躺在病床上，我一起来，觉得无意识一下，接着开始发晕，眼睛所看到的事物开是变化，东西乱晃，大概有一分钟，直到我撞到和床挨着的窗子上，我才反映过来。我一头扎在床上了。接着开始针灸了，我发晕这一点并没有引起太大的注意！！！</p>
+
+<p>下午我的病情彻底恶化了！！！这也成为我有生以来最难熬的一下午！！！</p>
+
+<p>2点左右，我和母亲出去回来（至于出去做什么我不想说），母亲去买东西，我又是自己上楼，这一次，根本就不能说我是走上去的！我当时脑袋十分迷糊，腹部的疼痛让我不得不弯着腰，我有一个习惯，喜欢数台阶，我知道自己家的台阶有多少——14个台阶，可是我数着14个台阶后，脚无意识的迈了第15个台阶！晃了一下差点趴在楼梯上！我掏出钥匙，我能看到锁，但我看不到钥匙孔在哪。下面的门我不知道怎么弄开的，等我爬上3楼拨动门上的密码的时候，我晕的什么都看不到了，所有的东西都恍惚。我进屋后，我分明记得鞋就在我正对的地方，可是我看不到，怎么都看不到，我使劲去找寻，最后还凭是借自己的感觉穿上鞋，回到我的屋，一下子就趴在我的床上，闭着眼睛。我只是想睡一下，我想我睡一觉就会好些，可是，我何曾想过死神的手正伸向还未过花季少年的我！</p>
+
+<p>母亲刚回来，不到5分钟的时间。我出事了！！！</p>
+
+<p>我觉得我右腿无意识开是动，大概5、6下左右，全身开始像麻花一样的卷，先是上身，就像有人把我的双臂圈成圈一样的感觉，觉得骨头都碎了，接着是下身也是同样的感觉。全身就像是麻花一样让一卷了一圈。然后我听母亲说了两声：“儿子你别下妈。”之后我全身一点知觉都没有了……我抽搐了……我晕过去了，什么都不知道了……</p>
+
+<p>于次同时，我母亲听到一声大叫，当然这都是我母亲事后和我说的，我当时觉得我没叫。后来她还说她说“儿子你别吓妈”那句话都没遍数了。可我不知道……</p>
+
+<p>我母亲看我：面向右转，脸色雪白，两眼上翻，咬牙，口吐白沫！！！</p>
+
+<p>当时母亲吓坏了，她彻底的知道为什么我大姨不给我看针了！！！我母亲呆的都打不出电话了……我母亲哭了……</p>
+
+<p>有半个小时的时间，我被送到医院了。之后做了一系列的检查，我小叔一直陪着我。当时我还是昏迷。</p>
+
+<p>我不知道都做了什么。刚做脑CT的时候，我终于醒了，我浑身都软了，没力气。我不知道我怎么来的。更不知道着是在干什么，我只是以为这是第二天了。</p>
+
+<p>我醒了没多长时间我第二次抽搐了！我听有人和我说我抽过去了，所以当我第二次右腿在无意识的动的时候，我告诉我叔说：“又来了，我又要抽了”。接着我又抽过去了。又不知道多长时间我醒了。由于当时都关注我，时间方面不准了些。</p>
+
+<p>后来我在哈市住院才了解到：我一共抽搐3次，第一次最严重。给我主治的博士后说幸好我缓过来了，缓不过来我就＊＊；第二次抽搐，我就被注射了一只10毫升的安定；当时，我抽的时候医院还拿起口器，硬没把我口打开（这是我叔事后很久才说的）。第三次，是在赶往哈市的路上，这次时间最短，有一分钟我就醒了。小叔当时就把他的手往我嘴里放，他怕我自己会把舌头咬掉。可我当时并没有觉的有什么东西在我嘴里……！！！</p>
+
+<p>直到第三次抽搐我才知道，我第一次抽搐的时候把舌头咬坏了，大概有１平方厘米，分别在舌头的两侧（我住院有４、５天才好），第二次抽的时候，我叔按我人中，都扣坏了（我舌头好后的两天，人中上的伤才好）。</p>
+
+<p>当晚，我们去了哈尔滨一大二院.。</p>
+
+<p>我建议，以后生病死都不去哈尔滨一大二院，一个字——黑。我在一大住了一天，医药费950多。其中有两种要没打，要钱了，而药没了。一级护理还住走廊！！！第二天，我们去211医院二级护理住的都是特间！一个病房就两人，一个我，另一个是一个77岁高龄的老人。更气人的是脑CT、腰穿、磁共振都排到下周！和那医生说更气，基本上就告诉你，你不掏钱给红包就不给你做了，就差明说了，还好在一大二院有认识人，找关系说做磁共振等明天，到了明天，上一个病人做，机器还好好的，等我做的时候坏了！！！</p>
+
+<p>我一直昏睡，脑袋一直迷糊，但是有些意识。我只是知道，难受，十分难受。</p>
+
+<p>第六天——5月17日</p>
+
+<p>我父亲听我出事连夜从大兴安岭赶回来，由于磁共振没做上，再加上听叔和母亲说，二话没说，连针都不打了。父亲当即就带我转院了。</p>
+
+<p>以前小叔在211旁边的大学上过学，比较熟悉地形，所以一切都是小叔打点的，而二叔就去办理余下的琐事。父亲则全心地照顾着我。</p>
+
+<p>刚到211医院，我们就直接挂的急诊了，给我检查的是一个博士后，叫什么不知道。后来给我主治的大夫我知道名字。</p>
+
+<p>那博士后还夸了夸给我写病例的人呢，我就躺在床上迷糊地听着她读：</p>
+
+<p>患者母亲代诉，无明显诱因，患者突然大叫一声，双眼上翻，口吐白沫，牙关紧闭，四肢抽搐，家人未做任何处置。由110送院，发作时，患者无尿便失禁及呕吐（就最后一句我还挺是自豪的）。</p>
+
+<p>这个博士后读的是在我所在的地方医院开的门诊医疗手册的现病史。</p>
+
+<p>之后，我便被人送到神经内科，以一个重症病人的身份开始治疗。当即，我就被开始点药。</p>
+
+<p>给我主治的医生会诊后，基本诊断为病毒性脑炎。</p>
+
+<p>第七天——5月18日</p>
+
+<p>上午依旧打针，下午做了腰穿。腰穿是腰锥穿刺的简称，事后很久很久小叔才和我说当时的情形。给我做腰穿的时候，我父亲把我母亲强行推了出去，父亲和小叔按住我，我二叔一直忙着安顿送我来的人就没在。据父亲和小叔说，大多是小叔告诉我的，总共扎了两针，针长足有平常吃饭的半截筷子长！！！先是打麻药，针先进了一点打了一点药，然后，进一点打一点，进一点打一点，之后是抽脑脊液（做腰穿目的就是要着东西，父亲和小叔说，那东西比水还透明！），针比别的针都特别，不仅针照别的针粗，而且针头是外针套里针，双针！我叔看到一半就看不下去了，父亲全都看下来了。之后我就在床上躺了6个半小时，我实在坚持不住了，我求父亲让我动了一下。当时凌晨0点半左右，我刚一侧过身便睡了……</p>
+
+<p>第八天——5月19日</p>
+
+<p>上午，由于刚做完腰穿，我的腰不一般的疼，叫了一轮椅，把脑CT和磁公振做完（比一大二院强多多多多了！！！），下午诊断就全下来了：1.病毒性脑炎 2.继发性癫痫</p>
+
+<p>接下来，病情开始好转。就不特意介绍了（终于熬过去了~.~）</p>
+
+<p>我统计了一下，从我开始打针到出院，我的右手被扎了50多针，其中8次血常规化验（抽血），因为左手打完针后疼所以只有4针。</p>
+
+<p>下面给大家看下我的住院病案（只阐述主要内容）</p>
+
+<p>现病史：该患者于2007年5月16日下午14时许在家休息时突然大叫一声，继而意识丧失，呼之不应，双眼上翻，牙关紧闭，口吐白沫，双上肢屈曲，伴有舌咬伤，无尿便失禁，家人将患者送到当地医院就诊，在当地医院又发作一次，当地医生给予安定针10毫克静注后约1分钟缓解，并行头颅CT检查，回报额叶见有较高密度影，脑电图轻度异常改变，当地医生建议到上级医院进一步检查，来我院（211医院）途中病人又抽搐一次，约1分钟缓解，病人3次发作每次刚开始时意识清楚，门诊部以“抽搐待查”收入院。病程中尿正常，便秘、失眠、饮食尚开。</p>
+
+<p>既往史：</p>
+
+<p>1、否认高血压，糖尿病史</p>
+
+<p>2、否认肝炎，结核等传染病史</p>
+
+<p>3、否认重大精神创伤史</p>
+
+<p>4、否认药物、食物过敏史</p>
+
+<p>5、预防接种史不详</p>
+
+<p>个人史：</p>
+
+<p>1、生于当地，未到过疫区</p>
+
+<p>2、否认烟酒史</p>
+
+<p>3、否认工业毒物放射性物质接触史</p>
+
+<p>4、未婚</p>
+
+<p>家族史：</p>
+
+<p>1、否认家族性传染病史</p>
+
+<p>2、否认家族性遗传病史</p>
+
+<p>病案小结：</p>
+
+<p>患者以“发作性抽搐三次”入院，查体：BP 110 170MMHG（血压，血压正常），神清，精神萎靡，呼之能答，能正确回答问话。双眼活动自如，双侧瞳孔等大同圆，直径约3.0毫米，直间接对光反射存在，舌有点状咬伤疤痕。双肺呼吸容清，颈强，四肢肌力，肌张力正常，腿反射正常。</p>
+
+<p>特殊检查：（包括听力）前庭功能，超声波，脑电图，肌电图，CT扫描，同位素扫描，反射线，脑髓液……</p>
+
+<p>这次的大难，让我真正知道生命的重要，而且我更了解了父亲。自我恢复开始，我就对自己说——活着比什么都重要。过好我的每一天，让自己开开心心每一天，我无法预知未来，但我至少可以把握现在。而且我要留着我的命，完成二叔和小叔未完成的心愿，应该说我是继承。我想他们也希望我彻底完成他们并没有完成的而我有能力完成的。小叔说过只要能帮上忙的他一定会全力帮我的。</p>
+
+<p>我极力渴望出院，想回家，我想朋友。</p>
+
+<p>每天我都尽量一直开机，因为我担心，朋友会打电话给我，我更担心他们会因得不到我的音讯而着急，虽然就9个人给我打电话，发短信，但我已经知足了。更让我欣慰的是，我的一个网友竟然打电话，这真是让我感到，一个仅有2年认识的网友比我多年来上学在一起的同学都关心我，真是一种讽刺，但我无怨，至少我有我的朋友，真正的朋友。</p>
+
+<p>每天的点滴让我烦躁，一天每8小时一针，早上8点，开始3瓶，后来减为2瓶；下午4点一瓶；晚上12点一瓶。最遭罪的是8点的那一针。一直点到12点，打的时候还有静推。有两针，一针名为凯时，这是管肾的，在前面我也说了，由于疱疹病毒侵入肾，导致肾功不全，引起双肾疼痛，从而引起腹部大面积疼痛，这针自我住院一共推了6针。还有一针是地塞米松，这是促进药物吸收的，就是这针使得我浑身的肉疼了将近一个星期。地塞米松开始用的最大量20毫升，我出院那天减到5毫升，地塞米松就像大烟一样，打上我身上肉就不疼，不打的话就疼，但地塞米松如果打多了，可能得骨质疏松等骨质上的病。身上的肉不是一块两块的疼，开始小面积疼，由腹部扩散全身的肉，我父亲就是轻轻的碰我，我都误认为他掐我，我睡觉的时候，就是睡衣出一个褶，都能疼的我不行不行的。</p>
+
+<p>我想出院还有另一个原因——医药费。以我家的家庭条件，我的医药费一共的花销支付的绰绰有余（一共的医药费11000左右）我父亲要干近3月个才能挣到，我不忍心。我不忍父亲劳苦，他都苦了一辈子了……</p>
+
+<p>直到最后出院的那天我见到费用清单。上面说的凯时是最贵的药之一，一针144.62元！单就吃药方面一天我就要吃掉一百到二百块。打针方面不计。一盒100粒装的开同片400块。一天要吃12片。每天光是药片我就得吃将近30片的药片，我不是说吃的多，我是吃的钱，父亲挣的钱是多，但是……</p>
+
+<p>我问父亲，他上次照顾人是什么时候，他说是母亲怀我的时候，再上一次呢，我父亲开始吱唔起来，我一下鼻子就酸了，我真不懂事，又提到父亲的痛处了，我也没再问。我偷偷的看他，我也怕，我怕他会忍不住落泪……我真不孝！</p>
+
+<p>虽然父亲什么都没和我提过他以前，但是我在初二就开始完善了父亲16岁以后的故事，虽说只是片片，但这已经足够让我了解他了，父亲也和我提说好多他小时侯的故事，但是都是他太小的时候。他唯一和我提过最多的时候只有一句话，那还是初3，父亲显然有些喝高了，从他的话里明显可以知道，他那次回来和朋友聚会的时候，他的朋友说他们以前了。父亲只和我说了一句，他说：朋友聚会，我最怕的就是说起以前的往事。那时，我分明可以看到父亲眼中的忧伤和那欲下的泪水。而我早以泪横……</p>
+
+<p>我不想多说我父亲，我只是不想再让我再父亲受苦……生病期间，我觉得自己就像20到25岁的胡里奥·伊格莱西亚斯（西班牙情歌王子）而我的父亲就是老胡里奥。（如果有条件的话你们可以看一看此人的简历以及他写的《我的父亲》）</p>
+
+<p>我生病卧床不能动，父亲就管我吃饭、上厕，我看着父亲，内心的不忍，我不敢哭，我怕他伤心，看着他，太多的操劳让他开始略发秃顶，而且两侧的头发开始发白，我和他说了好几次了，让他焗发，可他就是不想，也许父亲不想掩饰岁月给他带来的变更，也许是别的，但他总是不诺。</p>
+
+<p>没几天，我就看出他开始有黑眼圈了，由于我做腰穿行走不便，每次上厕都要麻烦父亲。他总是睡不好。可他为掩饰这一切，总是转话题。</p>
+
+<p>神内（神经内科）中全是老年人，我作为一个少年进来，让着帮老人都不解，那些老人都是儿女照顾，而我却是父母照顾，想想我就不舒服，那些老人也是老了，有的腿不好使，走路的时候没准是哪只脚不会动，他们的儿女就喊啊喊的，还有的就是失禁，失禁不只一个。我看到的最严重的是我住院块一个星期的时候进来的病人，脑袋上全是管子，住了有两天就走了，看样是治不了了。</p>
+
+<p>主治我的医生叫崔艳艳，医德比一大的那帮畜生好多了，应该说一大的人没德，想想一大的那些人我就作呕。她几乎每天都来看我一回，问问我的状况，对我很是细心。</p>
+
+<p>5月29日上午8点40左右，我的主治医生崔艳艳最后一次看我。</p>
+
+<p>我问了她几个问题，其中我最关注的一个问题她没有好好的回答我，这儿让我有点担心，我问她：我复发的可能性多大？她看看我，一种明显的欺骗感压来“不大”然后她又说：“好好养着，不要太用脑子，丙戊酸钠（癫痫药）一定要吃满一个月，一个月以后再停，多吃些维生素的药，多吃补脑的东西，不要过于激动，脑袋疼的话一定要注意！你的病少说要养3个月！！！………………”</p>
+
+<p>3个月——我一阵苦笑……</p>
+
+<p>5月29日上午10点17分，我走出我的病房，走出211医院，我出院了！</p>
+
+<p>5月29日13：54：45 我最后的一位兄弟终于发来短信了。虽说我早躺在卧铺车上了，但毕竟最后的人齐了！！！</p>
+
+<p>由于那是下午4点的车所以我躺了一下午，还有一个原因就是地塞米松的副作用上来了，我混身疼。一路上我都没有睡，哈市连着好几天都下雨，家里这边也是，那天刚好放晴，下午，斜阳一直照至我回家，晚上7点21分我终于下车了！父亲说你看那街上扭秧歌的扭的多买力，这都是欢迎你呢！后来才知道，29号那天家这边下了好几天的雨刚停。</p>
+
+<p>我和父亲说，走的时候我明明记得树刚发芽，而现在全都绿了……</p>
+
+<p>5月30日，我实在是忍不住心中的激动去上课了，我应该听父亲的，心强无用，身子不行也不成。上午4节课我的腰实在是坐不了那么长时间，这一点我可以挺（我母亲挺担心的，因为她怕我留下后遗症）最可怕的是，我的脑袋，我看了不到一节的化学，头就开始沉了，最后一节数学，我的头略发疼了，我有些怕了（因为我被抽搐吓怕了，那种滋味实在是不好受，自我抽搐开始，我这半个月来天天晚上都睡不好，因为我还怕，我真正知道人没有意识是什么样，那就不是像是我想像睡觉一样简单了，无意识和睡觉根本就不是一回事！完全不是一回事！！！），之后便一直没再去学校……</p>
+
+<p>这次大难，给我的感受就是，我还活着，我活着回来了！！！我一定要留着这条命！！！</p>
+
+<p>我还是想说周国平的那句话：我一向声称一个人无须经历尽苦难就可体悟人生的悲凉，现在我知道，苦难者的体悟毕竟是有着完全不同的分量的。</p>
+
+<p>活着比什么都重要！！！</p>
+
+<hr />
+
+<p>2020年观后：
+看自己的这篇文章，说实话，写的确实不怎么样，感慨自己年少，至少让我能回想起那年的事儿，也许只有自己有体会，这篇文章本来在百度空间中，百度空间关闭后我也没有继续去整理，我记得这里面有父亲的评论，我挺想看的。文章的最后我引用了周国平的一句话，这句话当年我也是这么感慨的，但是当亲身尽力后，那种分量着实不同。</p>
+
+        </section>
+      </div>
+    </div>
+  </div>  
+  </section><footer class="footer footer-dark">
+  <div class="container">
+    <div class="columns">
+      <div class="column">
+        <img src="/footer.svg" alt="">
+        
+      </div>
+
+      <div class="column">
+        <div class="footer-column">
+          <div class="footer-header">
+              <h3>Copyright</h3>
+          </div>
+          <ul class="link-list">
+            <li>
+              <a>
+                <span class="icon"><i class="fa fa-copyright"></i></span>
+                Snow Wang - 2019
+              </a>
+            </li>
+              <li>
+                <a href="/about">
+                  <span class="icon"><i class="fa fa-cube"></i></span>
+                  About Me
+                </a>
+              </li>
+          </ul>
+        </div>
+      </div>
+
+              <div class="column">
+        <div class="footer-column">
+          <div class="footer-header">
+              <h3>Contacts</h3>
+          </div>
+          <ul class="link-list">
+            <li>
+
+
+
+
+            </li>
+            <li>
+              <a href="mailto:admin@farseer.vip" target="_blank">
+                <span class="icon"><i class="fa fa-envelope"></i></span>
+                admin@farseer.vip
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    <div class="column">
+
+        <div class="footer-column">
+          <div class="footer-header">
+              <h3>Visitor</h3>
+          </div>
+          <ul class="link-list">
+
+
+
+
+
+
+            <li>
+
+
+
+
+                <a href="https://info.flagcounter.com/4ldw"><img src="https://s11.flagcounter.com/count/4ldw/bg_444F60/txt_FFF7FC/border_FAFFFA/columns_3/maxflags_12/viewers_3/labels_1/pageviews_1/flags_0/percent_1/" alt="Flag Counter" border="0"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</footer>
+    <div id="backtotop"><a href="#"></a></div><div class="sidebar">
+  <div class="sidebar-header"><img src="/sidebar.svg" alt="">
+    
+    <a class="sidebar-close" href="javascript:void(0);">
+      <i data-feather="x"></i>
+    </a>
+  </div>
+  <div class="inner">
+    <ul class="sidebar-menu">
+      <li class="no-children">
+          <a href="/tags">
+            <div class="columns">
+              <table width="100%">  
+                <tr>
+                  <td class="">
+                    <span class="icon"><i class="fa fa-cubes"></i></span>All Tags
+                  </td>
+                  <td class="has-text-right" >
+                      
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </a>
+      <li class="no-children">
+          <a href="/tags/diary">
+            <div class="columns">
+              
+              <table width="100%">  
+                  <tr>
+                    <td class=""><span class="icon"><i class="fa fa-cube"></i></span>Diary</td>
+                    <td class="has-text-right" >
+                        <div class="tag-number">48</div>
+                      
+                    </td>
+                    
+                  </tr>
+              </table>
+              
+            </div>
+          </a>
+      </li>
+      <li class="no-children">
+          <a href="/tags/baidu">
+            <div class="columns">
+              
+              <table width="100%">  
+                  <tr>
+                    <td class=""><span class="icon"><i class="fa fa-cube"></i></span>Baidu</td>
+                    <td class="has-text-right" >
+                        <div class="tag-number">40</div>
+                      
+                    </td>
+                    
+                  </tr>
+              </table>
+              
+            </div>
+          </a>
+      </li>
+      <li class="no-children">
+          <a href="/tags/renren">
+            <div class="columns">
+              
+              <table width="100%">  
+                  <tr>
+                    <td class=""><span class="icon"><i class="fa fa-cube"></i></span>RenRen</td>
+                    <td class="has-text-right" >
+                        <div class="tag-number">8</div>
+                      
+                    </td>
+                    
+                  </tr>
+              </table>
+              
+            </div>
+          </a>
+      </li>
+      <li class="no-children">
+          <a href="/tags/jsssc">
+            <div class="columns">
+              
+              <table width="100%">  
+                  <tr>
+                    <td class=""><span class="icon"><i class="fa fa-cube"></i></span>Jsssc</td>
+                    <td class="has-text-right" >
+                        <div class="tag-number">2</div>
+                      
+                    </td>
+                    
+                  </tr>
+              </table>
+              
+            </div>
+          </a>
+      </li>
+      <li class="no-children">
+          <a href="/tags/pycharm">
+            <div class="columns">
+              
+              <table width="100%">  
+                  <tr>
+                    <td class=""><span class="icon"><i class="fa fa-cube"></i></span>PyCharm</td>
+                    <td class="has-text-right" >
+                        <div class="tag-number">1</div>
+                      
+                    </td>
+                    
+                  </tr>
+              </table>
+              
+            </div>
+          </a>
+      </li>
+      <li class="no-children">
+          <a href="/tags/python">
+            <div class="columns">
+              
+              <table width="100%">  
+                  <tr>
+                    <td class=""><span class="icon"><i class="fa fa-cube"></i></span>Python</td>
+                    <td class="has-text-right" >
+                        <div class="tag-number">1</div>
+                      
+                    </td>
+                    
+                  </tr>
+              </table>
+              
+            </div>
+          </a>
+      </li></ul>
+  </div>
+</div>
+
+
+<script src="/js/jquery-2.2.4.js"></script>
+<script src="/js/feather.4.22.0.js"></script>
+<script src="/js/modernizr-2.8.3.js"></script>
+<script src="/js/refresh.js"></script>
+<script src="/js/highlight.9.15.8.pack.js"></script>
+<script src="/js/highlightjs-line-numbers.2.7.0.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script>hljs.initLineNumbersOnLoad();</script>
+<script>
+document.addEventListener('DOMContentLoaded', (event) => {
+    document.querySelectorAll('.codeinline').forEach((block) => {
+      hljs.highlightBlock(block);
+    });
+  });
+</script>
+
+
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+</body>
+</html>
