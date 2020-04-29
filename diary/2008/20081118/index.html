@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="x-ua-compatible" content="ie=edge"><title>Snow Wang</title>
+    
+<link rel="icon" type="image/png" href="/images/favicon.png" />
+
+
+<link href="https://fonts.googleapis.com/css?family=Open&#43;Sans" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open&#43;Sans" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open&#43;Sans" rel="stylesheet"><link rel="stylesheet" type="text/css" href="/css/style.min.c792dd9fdc015e002564828445794c60a4326d1de4d387b32233bed5fd972471.css" integrity="sha256-x5Ldn9wBXgAlZIKERXlMYKQybR3k04ezIjO&#43;1f2XJHE=">
+<link rel="stylesheet" type="text/css" href="/css/monokai-sublime.9.15.8.min.min.3a5d282f03108101d715e80fd4c07b55502ec4673fc063f2b6e415d4def5b354.css" integrity="sha256-Ol0oLwMQgQHXFegP1MB7VVAuxGc/wGPytuQV1N71s1Q=">
+<link rel="stylesheet" type="text/css" href="/css/icons.min.56faae60f16170cbfab5c036036aafb37d367aa4d4f4483b335bd98b891fa00b.css" integrity="sha256-VvquYPFhcMv6tcA2A2qvs302eqTU9Eg7M1vZi4kfoAs=">
+<link rel="stylesheet" type="text/css" href="/css/refresh-css.min.4150dea8b1163110505480d97b50425998cd09b589f3ce9f9c36cd2ce2dc64c3.css" integrity="sha256-QVDeqLEWMRBQVIDZe1BCWZjNCbWJ886fnDbNLOLcZMM=">
+<link rel="stylesheet" type="text/css" href="/css/devicon.min.min.518a62b47f686f4f58d3fb025f440517563136512a002a84068505741776d302.css" integrity="sha256-UYpitH9ob09Y0/sCX0QFF1YxNlEqACqEBoUFdBd20wI=">
+
+  </head>
+  <body>
+    
+    <div id="preloader">
+      <div id="status"></div>
+    </div><nav class="navbar is-fresh is-transparent no-shadow" role="navigation" aria-label="main navigation">
+  <div class="container">
+    <div class="navbar-brand">
+
+      
+      
+      
+      <a class="navbar-item">
+        <div class="menu-icon-wrapper left-menu-icon-wrapper" style="visibility: visible;">
+          <svg width="1000px" height="1000px">
+            <path class="path1" d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800"></path>
+            <path class="path2" d="M 300 500 L 700 500"></path>
+            <path class="path3" d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200"></path>
+          </svg>
+          <button id="menu-icon-trigger" class="menu-icon-trigger"></button>
+        </div>
+        <div class="navbar-item left-menu-icon-wrapper">Tags</div>
+      </a>
+      <div class="navbar-item is-expanded"><a class="navbar-item" href="http://www.farseer.vip"><div >HOME</div></a></div>
+      <a class="navbar-item is-hidden-desktop">  
+        <div data-target="navbar-menu" class="navbar-item right-menu-icon-wrapper is-hidden-desktop">Menu</div>
+        <div data-target="navbar-menu" class="menu-icon-wrapper right-menu-icon-wrapper" style="visibility: visible;">
+          <svg width="1000px" height="1000px">
+            <path class="path1" d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800"></path>
+            <path class="path2" d="M 300 500 L 700 500"></path>
+            <path class="path3" d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200"></path>
+          </svg>
+          <button id="menu-icon-trigger" class="menu-icon-trigger"></button>
+        </div>
+      </a>
+    </div>
+
+    <div id="navbar-menu" class="navbar-menu is-static">
+      
+      <div class="navbar-end">
+        <a href="/about/" class="navbar-item is-secondary">About Me</a><a href="/blog/" class="navbar-item is-secondary">Blog</a>
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a href="/diary/" class="navbar-link">Diary</a>
+            <div class="navbar-dropdown">
+
+              <a href="/diary/2020/" class="navbar-item">Year of 2020</a><a href="/diary/2019/" class="navbar-item">Year of 2019</a><a href="/diary/2018/" class="navbar-item">Year of 2018</a><a href="/diary/2017/" class="navbar-item">Year of 2017</a><a href="/diary/2016/" class="navbar-item">Year of 2016</a><a href="/diary/2015/" class="navbar-item">Year of 2015</a><a href="/diary/2014/" class="navbar-item">Year of 2014</a><a href="/diary/2013/" class="navbar-item">Year of 2013</a><a href="/diary/2012/" class="navbar-item">Year of 2012</a><a href="/diary/2011/" class="navbar-item">Year of 2011</a><a href="/diary/2010/" class="navbar-item">Year of 2010</a><a href="/diary/2009/" class="navbar-item">Year of 2009</a><a href="/diary/2008/" class="navbar-item">Year of 2008</a><a href="/diary/2007/" class="navbar-item">Year of 2007</a></div>
+          </div></div>
+    </div>
+  </div>
+</nav><nav id="navbar-clone" class="navbar is-fresh is-transparent" role="navigation" aria-label="main navigation">
+  <div class="container">
+      <div class="navbar-brand">
+  
+        
+        
+        
+        <a class="navbar-item">
+          <div class="menu-icon-wrapper left-menu-icon-wrapper" style="visibility: visible;">
+            <svg width="1000px" height="1000px">
+              <path class="path1" d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800"></path>
+              <path class="path2" d="M 300 500 L 700 500"></path>
+              <path class="path3" d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200"></path>
+            </svg>
+            <button id="menu-icon-trigger" class="menu-icon-trigger"></button>
+          </div>
+          <div class="navbar-item left-menu-icon-wrapper">Tags</div>
+        </a>
+  
+        <div class="navbar-item is-expanded"><a class="navbar-item" href="http://www.farseer.vip"><div >HOME</div></a></div>
+        <a class="navbar-item is-hidden-desktop">  
+          <div data-target="cloned-navbar-menu" class="navbar-item right-menu-icon-wrapper is-hidden-desktop">Menu</div>
+          <div data-target="cloned-navbar-menu" class="menu-icon-wrapper right-menu-icon-wrapper" style="visibility: visible;">
+            <svg width="1000px" height="1000px">
+              <path class="path1" d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800"></path>
+              <path class="path2" d="M 300 500 L 700 500"></path>
+              <path class="path3" d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200"></path>
+            </svg>
+            <button id="menu-icon-trigger" class="menu-icon-trigger"></button>
+          </div>
+        </a>
+      </div>
+  
+      
+  
+      <div id="cloned-navbar-menu" class="navbar-menu is-static">
+        <div class="navbar-end">
+          <a href="/about/" class="navbar-item is-secondary">About Me</a><a href="/blog/" class="navbar-item is-secondary">Blog</a><div class="navbar-item has-dropdown is-hoverable">
+              <a href="/diary/" class="navbar-link">Diary</a>
+              <div class="navbar-dropdown">
+                <a href="/diary/2020/" class="navbar-item">Year of 2020</a><a href="/diary/2019/" class="navbar-item">Year of 2019</a><a href="/diary/2018/" class="navbar-item">Year of 2018</a><a href="/diary/2017/" class="navbar-item">Year of 2017</a><a href="/diary/2016/" class="navbar-item">Year of 2016</a><a href="/diary/2015/" class="navbar-item">Year of 2015</a><a href="/diary/2014/" class="navbar-item">Year of 2014</a><a href="/diary/2013/" class="navbar-item">Year of 2013</a><a href="/diary/2012/" class="navbar-item">Year of 2012</a><a href="/diary/2011/" class="navbar-item">Year of 2011</a><a href="/diary/2010/" class="navbar-item">Year of 2010</a><a href="/diary/2009/" class="navbar-item">Year of 2009</a><a href="/diary/2008/" class="navbar-item">Year of 2008</a><a href="/diary/2007/" class="navbar-item">Year of 2007</a></div>
+            </div></div>
+      </div>
+  
+  
+  
+  
+    </div>
+  </nav>
+<section class="section is-medium">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-centered-tablet-portrait">
+        <h1 class="title is-2 section-title">假如你是我，你会怎么做？</h1>
+        <h5 class="subtitle is-5 is-muted"></h5>
+        <div class="divider"></div>
+        
+        <section class="section content has-text-justified">
+          <blockquote>
+<p>漂泊的人 19:20:47</p>
+
+<p>我从内心不反对，但是请你记住你再过12天才到18周岁生日，才算成年</p>
+
+<p>借來的天堂 19:21:09</p>
+
+<p>你记错了</p>
+
+<p>漂泊的人 19:21:25</p>
+
+<p>没记错</p>
+
+<p>漂泊的人 19:21:38</p>
+
+<p>我 看过了</p>
+
+<p>漂泊的人 19:22:05</p>
+
+<p>你怎么没去上课</p>
+
+<p>借來的天堂 19:22:17</p>
+
+<p>晚课连上 放学了</p>
+
+<p>漂泊的人 19:22:23</p>
+
+<p>我以为你没在线上</p>
+
+<p>漂泊的人 19:23:11</p>
+
+<p>你让我看那个有什么想法吗？</p>
+
+<p>借來的天堂 19:23:27</p>
+
+<p>停 &hellip;</p>
+
+<p>漂泊的人 19:25:01</p>
+
+<p>爱情往往是这样：你深爱的人往往没有选择你，而爱你的人往往不是你的最爱</p>
+
+<p>漂泊的人 19:25:19</p>
+
+<p>您拒绝了对方的视频聊天请求。</p>
+
+<p>借來的天堂 19:25:30</p>
+
+<p>停 老爸我不想说</p>
+
+<p>漂泊的人 19:25:46</p>
+
+<p>为什么呢</p>
+
+<p>借來的天堂 19:26:02</p>
+
+<p>不知道不想提 和你一样</p>
+
+<p>漂泊的人 19:26:30</p>
+
+<p>哦</p>
+
+<p>漂泊的人 19:26:36</p>
+
+<p>那好吧</p>
+
+<p>漂泊的人 19:27:16</p>
+
+<p>再过12天是你18周岁生日</p>
+
+<p>漂泊的人 19:27:55</p>
+
+<p>难道你记错了？</p>
+
+<p>借來的天堂 19:28:02</p>
+
+<p>你记错了</p>
+
+<p>借來的天堂 19:28:05</p>
+
+<p>12月12日</p>
+
+<p>漂泊的人 19:29:30</p>
+
+<p>我记的是农历11月初三</p>
+
+<p>借來的天堂 19:29:52</p>
+
+<p>我一会儿 去看看吧 也许我记错了</p>
+
+<p>漂泊的人 19:30:14</p>
+
+<p>是你记错了</p>
+
+<p>漂泊的人 19:32:22</p>
+
+<p>我没别的意思，就是希望你能为你的行为负责，不要一时头脑发热干傻事</p>
+
+<p>漂泊的人 19:34:17</p>
+
+<p><b><font  color="red">我不希望你以后的生活象我一样四处漂泊</font></b></p>
+
+<p>漂泊的人 19:39:55</p>
+
+<p>怎么不说话了？</p>
+
+<p>借來的天堂 19:40:05</p>
+
+<p>不想说 你说我看着</p>
+
+<p>漂泊的人 19:40:13</p>
+
+<p>哦</p>
+
+<p>漂泊的人 19:40:49</p>
+
+<p>不论何时 不论何地 我等待着 我守候着 等你后悔</p>
+
+<p>漂泊的人 19:41:04</p>
+
+<p>是 你说的吗？</p>
+
+<p>借來的天堂 19:41:31</p>
+
+<p>以前说的现在不说了</p>
+
+<p>借來的天堂 19:41:36</p>
+
+<p>我没那么傻</p>
+
+<p>漂泊的人 19:42:29</p>
+
+<p>要想让她后悔就的表现出你的优秀</p>
+
+<p>漂泊的人 19:43:47</p>
+
+<p>我希望你的志向和心胸象你的名字一样</p>
+
+<p>漂泊的人 19:47:35</p>
+
+<p><b><font  color="red">做为男人就要为你的家人，爱人，儿女着想，想办法让他们过上好日子，</font></b></p>
+
+<p>漂泊的人 19:50:34</p>
+
+<p>听说过吗：爱情是不会长久的。同样没有面包的生活夜不会长久的</p>
+
+<p>漂泊的人 19:51:04</p>
+
+<p>没有面包的爱情是不会长久的</p>
+
+<p>漂泊的人 19:51:46</p>
+
+<p>同样没有面包的生活也不会长久的</p>
+
+<p>漂泊的人 19:52:13</p>
+
+<p>和你说这些也许太早了</p>
+
+<p>漂泊的人 19:53:21</p>
+
+<p>希望你明白生活是现实的，艰苦的</p>
+
+<p>漂泊的人 19:53:51</p>
+
+<p>要做好眼下的事</p>
+
+<p>漂泊的人 19:54:57</p>
+
+<p>希望你能明白我的意思，知道眼下你最主要的事是做什么</p>
+
+<p>漂泊的人 19:56:15</p>
+
+<p>别因为那些无关紧要的是牵扯你的精力</p>
+
+<p>借來的天堂 19:57:04</p>
+
+<p>老爸 麻烦看看那篇文章写的时间好不！</p>
+
+<p>还有 看看3楼的回复是什么时候 好嘛&hellip;</p>
+
+<p>借來的天堂 19:57:14</p>
+
+<p>我朋友还说 他贱的啊</p>
+
+<p>漂泊的人 20:00:48</p>
+
+<p>别和他一样</p>
+
+<p>漂泊的人 20:01:07</p>
+
+<p>你说话也不好听啊</p>
+
+<p>漂泊的人 20:01:25</p>
+
+<p>怎么总骂人呢？</p>
+
+<p>漂泊的人 20:02:47</p>
+
+<p>你看人家说的：而现在就是应该为将来努力</p>
+
+<p>借來的天堂 20:02:56</p>
+
+<p>对什么样的人就得用什么样的态度</p>
+
+<p>漂泊的人 20:03:15</p>
+
+<p>呵呵</p>
+
+<p>漂泊的人 20:04:00</p>
+
+<p>那也不该骂人啊</p>
+
+<p>漂泊的人 20:04:11</p>
+
+<p>不是你的风格</p>
+
+<p>借來的天堂 20:04:22</p>
+
+<p>那真不是我风格 逼我的</p>
+
+<p>借來的天堂 20:04:24</p>
+
+<p>他贱</p>
+
+<p>借來的天堂 20:04:47</p>
+
+<p>对了 你别去那人的空间说什么</p>
+
+<p>要不他 回学校又不知道哇啦什么了</p>
+
+<p>漂泊的人 20:05:20</p>
+
+<p>呵呵</p>
+
+<p>漂泊的人 20:05:43</p>
+
+<p>我看他也没说什么呀</p>
+
+<p>借來的天堂 20:05:59</p>
+
+<p>呵 是嘛 何</p>
+
+<p>漂泊的人 20:06:06</p>
+
+<p>就是说你有病的事吧</p>
+
+<p>漂泊的人 20:06:34</p>
+
+<p>不是已经好了吗</p>
+
+<p>借來的天堂 20:07:03</p>
+
+<p>呵</p>
+
+<p>他自我回来都没提过我生病 看了那篇文章哇啦起来了</p>
+
+<p>真巧</p>
+
+<p>漂泊的人 20:07:56</p>
+
+<p>其实没什么的</p>
+
+<p>漂泊的人 20:09:00</p>
+
+<p>有病是众所周知的事，也 不丢人</p>
+
+<p>借來的天堂 20:09:45</p>
+
+<p>你不了解他什么样的人</p>
+
+<p>你要是熟识他 你就不这么想了</p>
+
+<p>借來的天堂 20:10:01</p>
+
+<p>行了 老爸 我不想说了 你也别提了</p>
+
+<p>过去了就是过去了</p>
+
+<p>漂泊的人 20:11:31</p>
+
+<p>不是已经好了吗，你应该证明给他们看，你已经好了，你要是这样沉沦下去，那可真的让人觉得你还有病了</p>
+
+<p>漂泊的人 20:11:51</p>
+
+<p>明白？</p>
+
+<p>漂泊的人 20:14:59</p>
+
+<p>好的过去了就是过去了</p>
+
+<p>漂泊的人 20:15:42</p>
+
+<p>你看了吗？哪天是你生日？我感觉我没记错</p>
+
+<p>漂泊的人 20:38:44</p>
+
+<p>怎么不说话了？</p>
+
+<p>之后我便没再和老爸说，他一直都记得我生日，不论他在哪儿……</p>
+</blockquote>
+
+        </section>
+      </div>
+    </div>
+  </div>  
+  </section><footer class="footer footer-dark">
+  <div class="container">
+    <div class="columns">
+      <div class="column">
+        <img src="/footer.svg" alt="">
+        
+      </div>
+
+      <div class="column">
+        <div class="footer-column">
+          <div class="footer-header">
+              <h3>Copyright</h3>
+          </div>
+          <ul class="link-list">
+            <li>
+              <a>
+                <span class="icon"><i class="fa fa-copyright"></i></span>
+                Snow Wang - 2019
+              </a>
+            </li>
+              <li>
+                <a href="/about">
+                  <span class="icon"><i class="fa fa-cube"></i></span>
+                  About Me
+                </a>
+              </li>
+          </ul>
+        </div>
+      </div>
+
+              <div class="column">
+        <div class="footer-column">
+          <div class="footer-header">
+              <h3>Contacts</h3>
+          </div>
+          <ul class="link-list">
+            <li>
+
+
+
+
+            </li>
+            <li>
+              <a href="mailto:admin@farseer.vip" target="_blank">
+                <span class="icon"><i class="fa fa-envelope"></i></span>
+                admin@farseer.vip
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    <div class="column">
+
+        <div class="footer-column">
+          <div class="footer-header">
+              <h3>Visitor</h3>
+          </div>
+          <ul class="link-list">
+
+
+
+
+
+
+            <li>
+
+
+
+
+                <a href="https://info.flagcounter.com/4ldw"><img src="https://s11.flagcounter.com/count/4ldw/bg_444F60/txt_FFF7FC/border_FAFFFA/columns_3/maxflags_12/viewers_3/labels_1/pageviews_1/flags_0/percent_1/" alt="Flag Counter" border="0"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</footer>
+    <div id="backtotop"><a href="#"></a></div><div class="sidebar">
+  <div class="sidebar-header"><img src="/sidebar.svg" alt="">
+    
+    <a class="sidebar-close" href="javascript:void(0);">
+      <i data-feather="x"></i>
+    </a>
+  </div>
+  <div class="inner">
+    <ul class="sidebar-menu">
+      <li class="no-children">
+          <a href="/tags">
+            <div class="columns">
+              <table width="100%">  
+                <tr>
+                  <td class="">
+                    <span class="icon"><i class="fa fa-cubes"></i></span>All Tags
+                  </td>
+                  <td class="has-text-right" >
+                      
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </a>
+      <li class="no-children">
+          <a href="/tags/diary">
+            <div class="columns">
+              
+              <table width="100%">  
+                  <tr>
+                    <td class=""><span class="icon"><i class="fa fa-cube"></i></span>Diary</td>
+                    <td class="has-text-right" >
+                        <div class="tag-number">48</div>
+                      
+                    </td>
+                    
+                  </tr>
+              </table>
+              
+            </div>
+          </a>
+      </li>
+      <li class="no-children">
+          <a href="/tags/baidu">
+            <div class="columns">
+              
+              <table width="100%">  
+                  <tr>
+                    <td class=""><span class="icon"><i class="fa fa-cube"></i></span>Baidu</td>
+                    <td class="has-text-right" >
+                        <div class="tag-number">40</div>
+                      
+                    </td>
+                    
+                  </tr>
+              </table>
+              
+            </div>
+          </a>
+      </li>
+      <li class="no-children">
+          <a href="/tags/renren">
+            <div class="columns">
+              
+              <table width="100%">  
+                  <tr>
+                    <td class=""><span class="icon"><i class="fa fa-cube"></i></span>RenRen</td>
+                    <td class="has-text-right" >
+                        <div class="tag-number">8</div>
+                      
+                    </td>
+                    
+                  </tr>
+              </table>
+              
+            </div>
+          </a>
+      </li>
+      <li class="no-children">
+          <a href="/tags/jsssc">
+            <div class="columns">
+              
+              <table width="100%">  
+                  <tr>
+                    <td class=""><span class="icon"><i class="fa fa-cube"></i></span>Jsssc</td>
+                    <td class="has-text-right" >
+                        <div class="tag-number">2</div>
+                      
+                    </td>
+                    
+                  </tr>
+              </table>
+              
+            </div>
+          </a>
+      </li>
+      <li class="no-children">
+          <a href="/tags/pycharm">
+            <div class="columns">
+              
+              <table width="100%">  
+                  <tr>
+                    <td class=""><span class="icon"><i class="fa fa-cube"></i></span>PyCharm</td>
+                    <td class="has-text-right" >
+                        <div class="tag-number">1</div>
+                      
+                    </td>
+                    
+                  </tr>
+              </table>
+              
+            </div>
+          </a>
+      </li>
+      <li class="no-children">
+          <a href="/tags/python">
+            <div class="columns">
+              
+              <table width="100%">  
+                  <tr>
+                    <td class=""><span class="icon"><i class="fa fa-cube"></i></span>Python</td>
+                    <td class="has-text-right" >
+                        <div class="tag-number">1</div>
+                      
+                    </td>
+                    
+                  </tr>
+              </table>
+              
+            </div>
+          </a>
+      </li></ul>
+  </div>
+</div>
+
+
+<script src="/js/jquery-2.2.4.js"></script>
+<script src="/js/feather.4.22.0.js"></script>
+<script src="/js/modernizr-2.8.3.js"></script>
+<script src="/js/refresh.js"></script>
+<script src="/js/highlight.9.15.8.pack.js"></script>
+<script src="/js/highlightjs-line-numbers.2.7.0.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script>hljs.initLineNumbersOnLoad();</script>
+<script>
+document.addEventListener('DOMContentLoaded', (event) => {
+    document.querySelectorAll('.codeinline').forEach((block) => {
+      hljs.highlightBlock(block);
+    });
+  });
+</script>
+
+
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+</body>
+</html>
