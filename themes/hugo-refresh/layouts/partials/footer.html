@@ -1,0 +1,86 @@
+<footer class="footer footer-dark">
+  <div class="container">
+    <div class="columns">
+      <div class="column">
+        <!-- <div class="footer-logo"> -->
+            {{- $out_fo  := "footer.svg" -}}
+            {{- $img_n   := .Site.Params.footer.logo -}}
+            {{- $type    := lower (substr $img_n (sub (len $img_n) 3) (len $img_n)) -}}
+            {{- $img     := resources.Get $img_n -}}
+            {{- if eq $type "svg" -}}
+              {{- $img    = $img | resources.ExecuteAsTemplate $out_fo . }}
+            {{- end -}}
+            <img src="{{- $img.Permalink | relURL -}}" alt="">
+        <!-- </div> -->
+      </div>
+
+      <div class="column">
+        <div class="footer-column">
+          <div class="footer-header">
+              <h3>Copyright</h3>
+          </div>
+          <ul class="link-list">
+            <li>
+              <a>
+                <span class="icon"><i class="fa fa-copyright"></i></span>
+                {{ .Site.Params.footer.copyright }}
+              </a>
+            </li>
+              <li>
+                <a href="{{- printf "about" | relURL -}}">
+                  <span class="icon"><i class="fa fa-cube"></i></span>
+                  About Me
+                </a>
+              </li>
+          </ul>
+        </div>
+      </div>
+
+              <div class="column">
+        <div class="footer-column">
+          <div class="footer-header">
+              <h3>Contacts</h3>
+          </div>
+          <ul class="link-list">
+            <li>
+<!--              <a href="{{ .Site.Params.footer.linkedin }}" target="_blank">-->
+<!--                <span class="icon"><i class="fa fa-linkedin"></i></span>-->
+<!--                Someothers-->
+<!--              </a>-->
+            </li>
+            <li>
+              <a href="mailto:{{ .Site.Params.footer.email }}" target="_blank">
+                <span class="icon"><i class="fa fa-envelope"></i></span>
+                {{ .Site.Params.footer.email }}
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    <div class="column">
+
+        <div class="footer-column">
+          <div class="footer-header">
+              <h3>Visitor</h3>
+          </div>
+          <ul class="link-list">
+<!--            <li>-->
+<!--                <a href="{{- printf "about" | relURL -}}">-->
+<!--                  <span class="icon"><i class="fa fa-cube"></i></span>-->
+<!--                  About Me-->
+<!--                </a>-->
+<!--              </li>-->
+            <li>
+<!--              <a href="{{- printf "tags" | relURL -}} ">-->
+<!--                <span class="icon"><i class="fa fa-tag"></i></span>-->
+<!--                All Tags-->
+<!--              </a>-->
+                <a href="https://info.flagcounter.com/4ldw"><img src="https://s11.flagcounter.com/count/4ldw/bg_444F60/txt_FFF7FC/border_FAFFFA/columns_3/maxflags_12/viewers_3/labels_1/pageviews_1/flags_0/percent_1/" alt="Flag Counter" border="0"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</footer>
