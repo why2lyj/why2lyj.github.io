@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="x-ua-compatible" content="ie=edge"><title>Snow Wang</title>
+    
+<link rel="icon" type="image/png" href="/images/favicon.png" />
+
+
+<link href="https://fonts.googleapis.com/css?family=Open&#43;Sans" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open&#43;Sans" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open&#43;Sans" rel="stylesheet"><link rel="stylesheet" type="text/css" href="/style.sass" integrity="">
+<link rel="stylesheet" type="text/css" href="/css/monokai-sublime.9.15.8.min.min.3a5d282f03108101d715e80fd4c07b55502ec4673fc063f2b6e415d4def5b354.css" integrity="sha256-Ol0oLwMQgQHXFegP1MB7VVAuxGc/wGPytuQV1N71s1Q=">
+<link rel="stylesheet" type="text/css" href="/css/icons.min.6dc06ab2f3698408961127b959a0f87ba0426dfa1df4cb25a55fa434db7222c5.css" integrity="sha256-bcBqsvNphAiWESe5WaD4e6BCbfod9MslpV&#43;kNNtyIsU=">
+<link rel="stylesheet" type="text/css" href="/css/refresh-css.min.4150dea8b1163110505480d97b50425998cd09b589f3ce9f9c36cd2ce2dc64c3.css" integrity="sha256-QVDeqLEWMRBQVIDZe1BCWZjNCbWJ886fnDbNLOLcZMM=">
+<link rel="stylesheet" type="text/css" href="/css/devicon.min.min.13fddf418611477a10293a87542de7703396184696bd8cf50642c4c72994c78a.css" integrity="sha256-E/3fQYYRR3oQKTqHVC3ncDOWGEaWvYz1BkLExymUx4o=">
+
+  </head>
+  <body>
+    
+    <div id="preloader">
+      <div id="status"></div>
+    </div><nav class="navbar is-fresh is-transparent no-shadow" role="navigation" aria-label="main navigation">
+  <div class="container">
+    <div class="navbar-brand">
+
+      
+      
+      
+      <a class="navbar-item">
+        <div class="menu-icon-wrapper left-menu-icon-wrapper" style="visibility: visible;">
+          <svg width="1000px" height="1000px">
+            <path class="path1" d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800"></path>
+            <path class="path2" d="M 300 500 L 700 500"></path>
+            <path class="path3" d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200"></path>
+          </svg>
+          <button id="menu-icon-trigger" class="menu-icon-trigger"></button>
+        </div>
+        <div class="navbar-item left-menu-icon-wrapper">Tags</div>
+      </a>
+      <div class="navbar-item is-expanded"><a class="navbar-item" href="http://www.farseer.vip"><div >HOME</div></a></div>
+      <a class="navbar-item is-hidden-desktop">  
+        <div data-target="navbar-menu" class="navbar-item right-menu-icon-wrapper is-hidden-desktop">Menu</div>
+        <div data-target="navbar-menu" class="menu-icon-wrapper right-menu-icon-wrapper" style="visibility: visible;">
+          <svg width="1000px" height="1000px">
+            <path class="path1" d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800"></path>
+            <path class="path2" d="M 300 500 L 700 500"></path>
+            <path class="path3" d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200"></path>
+          </svg>
+          <button id="menu-icon-trigger" class="menu-icon-trigger"></button>
+        </div>
+      </a>
+    </div>
+
+    <div id="navbar-menu" class="navbar-menu is-static">
+      
+      <div class="navbar-end">
+        <a href="/about/" class="navbar-item is-secondary">About Me</a><a href="/blog/" class="navbar-item is-secondary">Blog</a>
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a href="/diary/" class="navbar-link">Diary</a>
+            <div class="navbar-dropdown">
+
+              <a href="/diary/2023/" class="navbar-item">Year of 2023</a><a href="/diary/2022/" class="navbar-item">Year of 2022</a><a href="/diary/2021/" class="navbar-item">Year of 2021</a><a href="/diary/2020/" class="navbar-item">Year of 2020</a><a href="/diary/2019/" class="navbar-item">Year of 2019</a><a href="/diary/2018/" class="navbar-item">Year of 2018</a><a href="/diary/2017/" class="navbar-item">Year of 2017</a><a href="/diary/2016/" class="navbar-item">Year of 2016</a><a href="/diary/2015/" class="navbar-item">Year of 2015</a><a href="/diary/2014/" class="navbar-item">Year of 2014</a><a href="/diary/2013/" class="navbar-item">Year of 2013</a><a href="/diary/2012/" class="navbar-item">Year of 2012</a><a href="/diary/2011/" class="navbar-item">Year of 2011</a><a href="/diary/2010/" class="navbar-item">Year of 2010</a><a href="/diary/2009/" class="navbar-item">Year of 2009</a><a href="/diary/2008/" class="navbar-item">Year of 2008</a><a href="/diary/2007/" class="navbar-item">Year of 2007</a></div>
+          </div></div>
+    </div>
+  </div>
+</nav><nav id="navbar-clone" class="navbar is-fresh is-transparent" role="navigation" aria-label="main navigation">
+  <div class="container">
+      <div class="navbar-brand">
+  
+        
+        
+        
+        <a class="navbar-item">
+          <div class="menu-icon-wrapper left-menu-icon-wrapper" style="visibility: visible;">
+            <svg width="1000px" height="1000px">
+              <path class="path1" d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800"></path>
+              <path class="path2" d="M 300 500 L 700 500"></path>
+              <path class="path3" d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200"></path>
+            </svg>
+            <button id="menu-icon-trigger" class="menu-icon-trigger"></button>
+          </div>
+          <div class="navbar-item left-menu-icon-wrapper">Tags</div>
+        </a>
+  
+        <div class="navbar-item is-expanded"><a class="navbar-item" href="http://www.farseer.vip"><div >HOME</div></a></div>
+        <a class="navbar-item is-hidden-desktop">  
+          <div data-target="cloned-navbar-menu" class="navbar-item right-menu-icon-wrapper is-hidden-desktop">Menu</div>
+          <div data-target="cloned-navbar-menu" class="menu-icon-wrapper right-menu-icon-wrapper" style="visibility: visible;">
+            <svg width="1000px" height="1000px">
+              <path class="path1" d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800"></path>
+              <path class="path2" d="M 300 500 L 700 500"></path>
+              <path class="path3" d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200"></path>
+            </svg>
+            <button id="menu-icon-trigger" class="menu-icon-trigger"></button>
+          </div>
+        </a>
+      </div>
+  
+      
+  
+      <div id="cloned-navbar-menu" class="navbar-menu is-static">
+        <div class="navbar-end">
+          <a href="/about/" class="navbar-item is-secondary">About Me</a><a href="/blog/" class="navbar-item is-secondary">Blog</a><div class="navbar-item has-dropdown is-hoverable">
+              <a href="/diary/" class="navbar-link">Diary</a>
+              <div class="navbar-dropdown">
+                <a href="/diary/2023/" class="navbar-item">Year of 2023</a><a href="/diary/2022/" class="navbar-item">Year of 2022</a><a href="/diary/2021/" class="navbar-item">Year of 2021</a><a href="/diary/2020/" class="navbar-item">Year of 2020</a><a href="/diary/2019/" class="navbar-item">Year of 2019</a><a href="/diary/2018/" class="navbar-item">Year of 2018</a><a href="/diary/2017/" class="navbar-item">Year of 2017</a><a href="/diary/2016/" class="navbar-item">Year of 2016</a><a href="/diary/2015/" class="navbar-item">Year of 2015</a><a href="/diary/2014/" class="navbar-item">Year of 2014</a><a href="/diary/2013/" class="navbar-item">Year of 2013</a><a href="/diary/2012/" class="navbar-item">Year of 2012</a><a href="/diary/2011/" class="navbar-item">Year of 2011</a><a href="/diary/2010/" class="navbar-item">Year of 2010</a><a href="/diary/2009/" class="navbar-item">Year of 2009</a><a href="/diary/2008/" class="navbar-item">Year of 2008</a><a href="/diary/2007/" class="navbar-item">Year of 2007</a></div>
+            </div></div>
+      </div>
+  
+  
+  
+  
+    </div>
+  </nav>
+<section class="section is-medium">
+        <div class="container">
+          <div class="columns">
+            <div class="column is-centered-tablet-portrait">
+              <h1 class="title section-title">Year of 2010</h1>
+              <h5 class="subtitle is-5 is-muted"></h5>
+              <div class="divider"></div>        
+              <div class="section is-medium">
+                <div class="container"><div class="columns"></div>
+                          <div class="columns"><div class="column is-4">
+    <div class="box">
+      <figure class="image is-3by2">
+        <a href="/diary/2010/20101217/"><img src="/diary/2010/20101217/20101217_hue79e3f154c11f151baa1f6ca03cfcabb_7291_600x0_resize_box_3.png" alt=""></a>
+      </figure>
+      <h3 class="title is-5 refresh-summary-title">
+        联想S10-3c 装机简说 联想S10-3c 如何安装XP系统
+      </h3>
+      <p class="refresh-summary">我把这篇装机文档留下的原因是因为这台电脑是在我大学时，我自己赚的，一个便携本给了父亲，父亲用了很多年，他高兴了很久很久</p> 
+      <div class="action has-text-right">
+        <a href="/diary/2010/20101217/" class="button is-primary">
+                Read More
+            </a>
+      </div>
+    </div>
+  </div><div class="column is-4">
+    <div class="box">
+      <figure class="image is-3by2">
+        <a href="/diary/2010/20101207/"><img src="/diary/2010/20101207/20101207_hu043eb6ac9350f9565f4822d95f92fe80_6897_600x0_resize_box_3.png" alt=""></a>
+      </figure>
+      <h3 class="title is-5 refresh-summary-title">
+        至我亲爱的steward
+      </h3>
+      <p class="refresh-summary">记录在百度空间中，文采不重要，确实年少轻狂</p> 
+      <div class="action has-text-right">
+        <a href="/diary/2010/20101207/" class="button is-primary">
+                Read More
+            </a>
+      </div>
+    </div>
+  </div><div class="column is-4">
+    <div class="box">
+      <figure class="image is-3by2">
+        <a href="/diary/2010/20101120/"><img src="/diary/2010/20101120/20101120_hu8564a48d3d4dcbc03d09daf79fdda110_7507_600x0_resize_box_3.png" alt=""></a>
+      </figure>
+      <h3 class="title is-5 refresh-summary-title">
+        写给还用360的好友们
+      </h3>
+      <p class="refresh-summary">记录在人人空间中，文采不重要</p> 
+      <div class="action has-text-right">
+        <a href="/diary/2010/20101120/" class="button is-primary">
+                Read More
+            </a>
+      </div>
+    </div>
+  </div></div>
+                          <div class="columns"><div class="column is-4">
+    <div class="box">
+      <figure class="image is-3by2">
+        <a href="/diary/2010/20101108/"><img src="/diary/2010/20101108/20101108_hu64daacad2e1d71bb8a6f3689349fd96f_7016_600x0_resize_box_3.png" alt=""></a>
+      </figure>
+      <h3 class="title is-5 refresh-summary-title">
+        我看到了未来（随记一次有意思的事情）
+      </h3>
+      <p class="refresh-summary">记录在百度空间中，文采不重要，确实年少轻狂</p> 
+      <div class="action has-text-right">
+        <a href="/diary/2010/20101108/" class="button is-primary">
+                Read More
+            </a>
+      </div>
+    </div>
+  </div><div class="column is-4">
+    <div class="box">
+      <figure class="image is-3by2">
+        <a href="/diary/2010/20101104/"><img src="/diary/2010/20101104/20101104_hu6c3d158139f294d60428b5954feb1d10_6825_600x0_resize_box_3.png" alt=""></a>
+      </figure>
+      <h3 class="title is-5 refresh-summary-title">
+        360与QQ
+      </h3>
+      <p class="refresh-summary">记录在百度空间中，文采不重要，确实年少轻狂</p> 
+      <div class="action has-text-right">
+        <a href="/diary/2010/20101104/" class="button is-primary">
+                Read More
+            </a>
+      </div>
+    </div>
+  </div><div class="column is-4">
+    <div class="box">
+      <figure class="image is-3by2">
+        <a href="/diary/2010/20100912/"><img src="/diary/2010/20100912/20100912_hu5a3f0635555ce383eac34f379cb01f0b_6985_600x0_resize_box_3.png" alt=""></a>
+      </figure>
+      <h3 class="title is-5 refresh-summary-title">
+        一年前大一，一年后大二
+      </h3>
+      <p class="refresh-summary">记录在百度空间中，文采不重要，确实年少轻狂</p> 
+      <div class="action has-text-right">
+        <a href="/diary/2010/20100912/" class="button is-primary">
+                Read More
+            </a>
+      </div>
+    </div>
+  </div></div>
+                          <div class="columns"><div class="column is-4">
+    <div class="box">
+      <figure class="image is-3by2">
+        <a href="/diary/2010/20101030/"><img src="/diary/2010/20101030/20101030_hu8666b4bc0f37f28a0f7424be7ad66922_7816_600x0_resize_box_3.png" alt=""></a>
+      </figure>
+      <h3 class="title is-5 refresh-summary-title">
+        这份担心，也许……
+      </h3>
+      <p class="refresh-summary">记录在百度空间中，文采不重要，确实年少轻狂</p> 
+      <div class="action has-text-right">
+        <a href="/diary/2010/20101030/" class="button is-primary">
+                Read More
+            </a>
+      </div>
+    </div>
+  </div><div class="column is-4">
+    <div class="box">
+      <figure class="image is-3by2">
+        <a href="/diary/2010/20100823/"><img src="/diary/2010/20100823/20100823_hu382ba855a6b8c8b93b0164229d24dc8f_7342_600x0_resize_box_3.png" alt=""></a>
+      </figure>
+      <h3 class="title is-5 refresh-summary-title">
+        上海第一站 同济大学 夜游同济感慨万分
+      </h3>
+      <p class="refresh-summary">记录在百度空间中，文采不重要，确实年少轻狂</p> 
+      <div class="action has-text-right">
+        <a href="/diary/2010/20100823/" class="button is-primary">
+                Read More
+            </a>
+      </div>
+    </div>
+  </div><div class="column is-4">
+    <div class="box">
+      <figure class="image is-3by2">
+        <a href="/diary/2010/20100810/"><img src="/diary/2010/20100810/20100810_hua69910810ff9c5ace1f6135829c24477_7305_600x0_resize_box_3.png" alt=""></a>
+      </figure>
+      <h3 class="title is-5 refresh-summary-title">
+        记一份值得学习的心情
+      </h3>
+      <p class="refresh-summary">记录在百度空间中，文采不重要，确实年少轻狂</p> 
+      <div class="action has-text-right">
+        <a href="/diary/2010/20100810/" class="button is-primary">
+                Read More
+            </a>
+      </div>
+    </div>
+  </div></div>
+                          <div class="columns"><div class="column is-4">
+    <div class="box">
+      <figure class="image is-3by2">
+        <a href="/diary/2010/20100701/"><img src="/diary/2010/20100701/20100701_hu6c2758f1580a8d414b842ed4a5481759_6320_600x0_resize_box_3.png" alt=""></a>
+      </figure>
+      <h3 class="title is-5 refresh-summary-title">
+        《不抱怨的世界》
+      </h3>
+      <p class="refresh-summary">记录在百度空间中，文采不重要，确实年少轻狂</p> 
+      <div class="action has-text-right">
+        <a href="/diary/2010/20100701/" class="button is-primary">
+                Read More
+            </a>
+      </div>
+    </div>
+  </div><div class="column is-4">
+    <div class="box">
+      <figure class="image is-3by2">
+        <a href="/diary/2010/20100612/"><img src="/diary/2010/20100612/20100612_hu34166f6cbc14f9db8c2afa1a01eb8a19_7034_600x0_resize_box_3.png" alt=""></a>
+      </figure>
+      <h3 class="title is-5 refresh-summary-title">
+        赠与我的好友——大双
+      </h3>
+      <p class="refresh-summary">记录在百度空间中，文采不重要，确实年少轻狂</p> 
+      <div class="action has-text-right">
+        <a href="/diary/2010/20100612/" class="button is-primary">
+                Read More
+            </a>
+      </div>
+    </div>
+  </div><div class="column is-4">
+    <div class="box">
+      <figure class="image is-3by2">
+        <a href="/diary/2010/20100218/"><img src="/diary/2010/20100218/20100218_hu976d76b0a461eff36436c489eaef3188_7138_600x0_resize_box_3.png" alt=""></a>
+      </figure>
+      <h3 class="title is-5 refresh-summary-title">
+        观色
+      </h3>
+      <p class="refresh-summary">记录在百度空间中，文采不重要，确实年少轻狂</p> 
+      <div class="action has-text-right">
+        <a href="/diary/2010/20100218/" class="button is-primary">
+                Read More
+            </a>
+      </div>
+    </div>
+  </div></div>
+                          <div class="columns"><div class="column is-4">
+    <div class="box">
+      <figure class="image is-3by2">
+        <a href="/diary/2010/20100119/"><img src="/diary/2010/20100119/20100119_hu944bf209120ccac88b742d4bba03fcea_6843_600x0_resize_box_3.png" alt=""></a>
+      </figure>
+      <h3 class="title is-5 refresh-summary-title">
+        写给我妈妈的....
+      </h3>
+      <p class="refresh-summary">记录在百度空间中，文采不重要，确实年少轻狂</p> 
+      <div class="action has-text-right">
+        <a href="/diary/2010/20100119/" class="button is-primary">
+                Read More
+            </a>
+      </div>
+    </div>
+  </div><div class="column is-4">
+    <div class="box">
+      <figure class="image is-3by2">
+        <a href="/diary/2010/20100102/"><img src="/diary/2010/20100102/20100102_hu64f67c1237a050a2555aab3ff90cf6bb_6414_600x0_resize_box_3.png" alt=""></a>
+      </figure>
+      <h3 class="title is-5 refresh-summary-title">
+        2010年元旦后...
+      </h3>
+      <p class="refresh-summary">记录在百度空间中，文采不重要，确实年少轻狂</p> 
+      <div class="action has-text-right">
+        <a href="/diary/2010/20100102/" class="button is-primary">
+                Read More
+            </a>
+      </div>
+    </div>
+  </div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section><footer class="footer footer-dark">
+  <div class="container">
+    <div class="columns">
+      <div class="column">
+        <img src="/footer.svg" alt="">
+        
+      </div>
+
+      <div class="column">
+        <div class="footer-column">
+          <div class="footer-header">
+              <h3>Copyright</h3>
+          </div>
+          <ul class="link-list">
+            <li>
+              <a>
+                <span class="icon"><i class="fa fa-copyright"></i></span>
+                Snow Wang - 2019
+              </a>
+            </li>
+              <li>
+                <a href="/about">
+                  <span class="icon"><i class="fa fa-cube"></i></span>
+                  About Me
+                </a>
+              </li>
+          </ul>
+        </div>
+      </div>
+
+              <div class="column">
+        <div class="footer-column">
+          <div class="footer-header">
+              <h3>Contacts</h3>
+          </div>
+          <ul class="link-list">
+            <li>
+
+
+
+
+            </li>
+            <li>
+              <a href="mailto:admin@farseer.vip" target="_blank">
+                <span class="icon"><i class="fa fa-envelope"></i></span>
+                admin@farseer.vip
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    <div class="column">
+
+        <div class="footer-column">
+          <div class="footer-header">
+              <h3>Visitor</h3>
+          </div>
+          <ul class="link-list">
+
+
+
+
+
+
+            <li>
+
+
+
+
+                <a href="https://info.flagcounter.com/4ldw"><img src="https://s11.flagcounter.com/count/4ldw/bg_444F60/txt_FFF7FC/border_FAFFFA/columns_3/maxflags_12/viewers_3/labels_1/pageviews_1/flags_0/percent_1/" alt="Flag Counter" border="0"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</footer>
+    <div id="backtotop"><a href="#"></a></div><div class="sidebar">
+  <div class="sidebar-header"><img src="/sidebar.svg" alt="">
+    
+    <a class="sidebar-close" href="javascript:void(0);">
+      <i data-feather="x"></i>
+    </a>
+  </div>
+  <div class="inner">
+    <ul class="sidebar-menu">
+      <li class="no-children">
+          <a href="/tags">
+            <div class="columns">
+              <table width="100%">  
+                <tr>
+                  <td class="">
+                    <span class="icon"><i class="fa fa-cubes"></i></span>All Tags
+                  </td>
+                  <td class="has-text-right" >
+                      
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </a>
+      <li class="no-children">
+          <a href="/tags/diary">
+            <div class="columns">
+              
+              <table width="100%">  
+                  <tr>
+                    <td class=""><span class="icon"><i class="fa fa-cube"></i></span>Diary</td>
+                    <td class="has-text-right" >
+                        <div class="tag-number">48</div>
+                      
+                    </td>
+                    
+                  </tr>
+              </table>
+              
+            </div>
+          </a>
+      </li>
+      <li class="no-children">
+          <a href="/tags/baidu">
+            <div class="columns">
+              
+              <table width="100%">  
+                  <tr>
+                    <td class=""><span class="icon"><i class="fa fa-cube"></i></span>Baidu</td>
+                    <td class="has-text-right" >
+                        <div class="tag-number">40</div>
+                      
+                    </td>
+                    
+                  </tr>
+              </table>
+              
+            </div>
+          </a>
+      </li>
+      <li class="no-children">
+          <a href="/tags/renren">
+            <div class="columns">
+              
+              <table width="100%">  
+                  <tr>
+                    <td class=""><span class="icon"><i class="fa fa-cube"></i></span>RenRen</td>
+                    <td class="has-text-right" >
+                        <div class="tag-number">8</div>
+                      
+                    </td>
+                    
+                  </tr>
+              </table>
+              
+            </div>
+          </a>
+      </li>
+      <li class="no-children">
+          <a href="/tags/jsssc">
+            <div class="columns">
+              
+              <table width="100%">  
+                  <tr>
+                    <td class=""><span class="icon"><i class="fa fa-cube"></i></span>Jsssc</td>
+                    <td class="has-text-right" >
+                        <div class="tag-number">2</div>
+                      
+                    </td>
+                    
+                  </tr>
+              </table>
+              
+            </div>
+          </a>
+      </li>
+      <li class="no-children">
+          <a href="/tags/pycharm">
+            <div class="columns">
+              
+              <table width="100%">  
+                  <tr>
+                    <td class=""><span class="icon"><i class="fa fa-cube"></i></span>PyCharm</td>
+                    <td class="has-text-right" >
+                        <div class="tag-number">1</div>
+                      
+                    </td>
+                    
+                  </tr>
+              </table>
+              
+            </div>
+          </a>
+      </li>
+      <li class="no-children">
+          <a href="/tags/python">
+            <div class="columns">
+              
+              <table width="100%">  
+                  <tr>
+                    <td class=""><span class="icon"><i class="fa fa-cube"></i></span>Python</td>
+                    <td class="has-text-right" >
+                        <div class="tag-number">1</div>
+                      
+                    </td>
+                    
+                  </tr>
+              </table>
+              
+            </div>
+          </a>
+      </li></ul>
+  </div>
+</div>
+
+
+<script src="/js/jquery-2.2.4.js"></script>
+<script src="/js/feather.4.22.0.js"></script>
+<script src="/js/modernizr-2.8.3.js"></script>
+<script src="/js/refresh.js"></script>
+<script src="/js/highlight.9.15.8.pack.js"></script>
+<script src="/js/highlightjs-line-numbers.2.7.0.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script>hljs.initLineNumbersOnLoad();</script>
+<script>
+document.addEventListener('DOMContentLoaded', (event) => {
+    document.querySelectorAll('.codeinline').forEach((block) => {
+      hljs.highlightBlock(block);
+    });
+  });
+</script>
+
+
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+</body>
+</html>
